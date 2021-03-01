@@ -318,55 +318,76 @@ img {
   height: 400px;
   margin: 0 auto;
   background-color: var(--bcg-footer-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../hero/mobile-img.jpg);
   background-size: cover;
 }
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 767px) {
+  .hero {
+    background-color: var(--bcg-footer-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../hero/tablet-img.jpg);
+    background-size: cover;
+  }
 }
 
-.benefits-div-icon {
-  width: 270px;
-  height: 120px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background: var(--bg-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../hero/Img.jpg");
+    text-align: center;
+  }
 }
 
-.post-list {
-  display: flex;
-}
-
-.post-title-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-
-.text {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.our-products {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
+@media screen and (max-width: 480px) {
+  .benefits-div-icon {
+    max-width: 450px;
+    margin: 0;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .post-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 450px;
+  }
+  .post-title-text {
+    widows: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  .text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .post-list {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .works {
@@ -997,6 +1018,29 @@ img {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 767px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 700px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
 .order-button {
   min-width: 200px;
   height: 50px;
@@ -1021,6 +1065,12 @@ img {
 .order-button :hover,
 .order-button :focus {
   background-color: var(--hover-color);
+}
+
+.hero .order-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .post-title {

@@ -1,3 +1,6 @@
+
+
+
 .order-button{
 min-width: 200px;
 height: 50px;
@@ -22,5 +25,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   & :hover,
   & :focus{
     background-color: var(--hover-color);
+  }
+
+  .hero & {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
   }
 }  

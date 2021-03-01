@@ -1,14 +1,42 @@
+// @media screen and (max-width: 480px){
+    .hero {
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: var(--bcg-footer-color);
+        background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../hero/mobile-img.jpg);
+        background-size: cover;  
+    }
 
-  .hero {
-    width: 100%;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    height: 400px;
-    margin: 0 auto;
+@media screen and (min-width: 767px){
+    .hero{
     background-color: var(--bcg-footer-color);
-    // background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../images/hero/hero-mobile.jpg);
-    background-size: cover;  
+    background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../hero/tablet-img.jpg);
+    background-size: cover; 
 }
+}
+
+@media screen and (min-width: 1200px){
+    .hero {
+            max-width: 1600px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 200px;
+            padding-top: 200px;
+            background: var(--bg-color);
+            background-image: 
+            linear-gradient(to right, 
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)
+            ),
+            url("../hero/Img.jpg");
+            text-align: center;
+            } 
+}
+ 
 // .hero {
 //     max-width: 1600px;
 //     height: 600px;
