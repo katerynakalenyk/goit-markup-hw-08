@@ -88,14 +88,20 @@
         </div>
     </header>
     <main> 
-    <!--Hero
+    <!--Hero-->
         <section class="hero">
             <div class="conteiner">
+                <picture>
+                    <source srcset="./hero/img.jpg 1x, ./hero/img@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./hero/tablet-img.jpg 1x, ./hero/tablet-img@2x.jpg 2x" media="(min-width: 767px)">
+                    <source srcset="./hero/mobile-img.jpg 1x, ./hero/mobile-img@2x.jpg 2x" media="(min-width: 480px)">
+                    <img src="./hero/Img.jpg" alt="">
+                </picture>
                  <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
                  <button class="order-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-    -->
+    
     <!--features
         <section class="features">
             <div class="conteiner"> 
