@@ -1,58 +1,73 @@
 
-@media screen and (max-width: 480px){
-.benefits-div-icon{
-max-width: 450px;
-margin: 0;
-height: 120px;
-box-sizing: border-box;
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #F5F4FA;
-border-radius: 4px;
-margin-bottom: 30px;
-}
 
-.post-title{
+
+
+.benefits-div-icon{
+    max-width: 100%;
+    margin: 0;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    min-width: 450px;
-}
-.post-title-text{
-widows: 100%;
-margin: 0 auto;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.142;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--text-color);
-margin-bottom: 10px;
-}
-  
-.text{
-width: 100%;
-font-size: 14px;
-line-height: 1.714;
-letter-spacing: 0.03em;
-color: #757575;
-}
-
-.post-list{
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    }
+    
+    .post-title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .post-title-text{
+    widows: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    }
+      
+    .text{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }
+    
+    .post-list{
     display: block;
     margin: 0 auto;
-margin-top: 60px;
-margin-bottom: 60px;
-}
+    margin-top: 60px;
+    margin-bottom: 60px;
+    }
 
-}
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
+.post-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 
+}  
+    
+    .post-title{
+        max-width: 450px;
+        margin: 0;
+        flex-basis: calc((100% - 15px * 4) / 2);
+        margin: 15px;
+    }
+    
+     
 }
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 1200px){
 
 }
 
