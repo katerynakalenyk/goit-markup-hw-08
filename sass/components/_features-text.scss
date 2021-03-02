@@ -1,7 +1,16 @@
-.post-title{
+// .post-title{
+//     width: 270px;
+    
+//     &:not(:last-child){
+//       margin-right: 30px;
+//     }
+//   } 
+@media screen and (min-width: 1200px){
+  .post-title{
     width: 270px;
     
     &:not(:last-child){
       margin-right: 30px;
     }
   } 
+}

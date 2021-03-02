@@ -1,12 +1,15 @@
 
 .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 
 .benefits-div-icon{
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     height: 120px;
     box-sizing: border-box;
@@ -24,17 +27,7 @@
         display: flex;
         flex-direction: column;
     }
-    .post-title-text{
-    widows: 100%;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-color);
-    margin-bottom: 10px;
-    }
+    
       
     .text{
     width: 100%;
@@ -44,31 +37,45 @@
     color: #757575;
     }
     
-    .post-list{
-    width: 100%;
-    display: block;
-    margin: -15px;
-    }
+
 
     @media screen and (max-width: 767px){
      .post-title{
          width: 100%;
      }
-    }
+     .post-title-text{
+        widows: 100%;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text-color);
+        margin-bottom: 10px;
+        }
+     
+}
 
 @media screen and (min-width: 768px){
 .post-list{
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
 }      
+.post-title{
+    margin: 15px;
+    width: calc((100% - 15px * 4) / 2);
 }
-@media screen and (max-width: 1199px){
-    .post-title{
-        width: 100%;
-        flex-basis: calc((100% - 2* 30px) / 2);
+
+}
+// @media screen and (max-width: 1199px){
+//     .post-title{
+//         width: 100%;
+//         flex-basis: calc((100% - 2* 30px) / 2);
     
-    }
-}
+//     }
+// }
 @media screen and (min-width: 1200px){
 .features{
 padding-top: 94px;
@@ -92,7 +99,7 @@ margin: auto;
 // }
 
 // .benefits-div-icon{
-// width: 270px;
+
 // height: 120px;
 // box-sizing: border-box;
 // border-radius: 4px;
