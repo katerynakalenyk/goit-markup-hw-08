@@ -41,12 +41,6 @@ color: var(--p-color);
 margin-bottom: 16px;
 }
 
-.igor{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .social-list{
 display: flex;
 justify-content: center;
@@ -84,19 +78,17 @@ border-radius: 50%;
     margin: 15px;
     width: calc((100% - 15px * 4) / 2);
   }  
+
+ 
     
   }
   @media screen and (max-width: 1199px){
-      .our-team-list{
-          flex-basis: calc((100% - 2* 30px) / 2);
-      
-      }
-      .our-team{
-      
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-      }  
+    .our-team{
+
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }   
   }
   @media screen and (min-width: 1200px){
    .team{
