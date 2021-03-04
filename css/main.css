@@ -725,15 +725,6 @@ img {
   .join {
     text-align: center;
   }
-  .mailing-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .right {
-    text-align: center;
-    margin-bottom: 60px;
-  }
 }
 
 .mail-fraim {
@@ -766,6 +757,10 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  .right {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -775,10 +770,18 @@ img {
   }
   .right {
     margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .wrap {
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer {
     padding: 60px 0;
     background: var(--bg-color);
+  }
+  .mailing-form {
+    flex-direction: row;
   }
   .footer-elements {
     display: flex;
@@ -808,9 +811,6 @@ img {
   }
   .down-contacts:hover {
     color: var(--hover-color);
-  }
-  .joing-us {
-    margin-left: 70px;
   }
   .join {
     font-weight: 700;
