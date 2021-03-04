@@ -7,6 +7,7 @@ background: #F5F4FA;
 
 .our-team-list{
 width: 100%;
+margin: 15px;
 background-color: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
@@ -98,6 +99,7 @@ padding-bottom: 94px;
   .our-team{
       
     display: flex;
+    justify-content: center;
   }
 
   .our-team-list{
