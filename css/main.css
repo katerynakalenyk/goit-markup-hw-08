@@ -95,9 +95,10 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
   justify-content: space-between;
+  flex-direction: column;
   position: absolute;
-  display: none;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -373,6 +374,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .text {
@@ -381,6 +383,16 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.post-title-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -404,7 +416,6 @@ img {
   .post-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
   .post-title {
     margin: 15px;
@@ -446,8 +457,6 @@ img {
   .our-products-list {
     display: flex;
     justify-content: center;
-    margin-top: -15px;
-    margin-bottom: -15px;
   }
   .our-products-item:not(:last-child) {
     margin-right: 30px;
@@ -566,6 +575,7 @@ img {
   .our-team {
     display: flex;
     justify-content: center;
+    margin: -15px;
   }
   .our-team-list {
     width: calc((100% - 3*30px) /4);
@@ -739,16 +749,6 @@ img {
   background-color: var(--hover-color);
 }
 
-@media screen and (min-width: 480px) {
-  .joing-us {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .join {
-    text-align: center;
-  }
-}
-
 .mail-fraim {
   width: 450px;
   height: 50px;
@@ -782,6 +782,13 @@ img {
   .right {
     text-align: center;
     margin-bottom: 60px;
+  }
+  .joing-us {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .join {
+    text-align: center;
   }
 }
 
@@ -1149,7 +1156,6 @@ img {
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196F3;
-  margin-top: 270px;
 }
 
 .mobile-contacts-link-mail {
@@ -1204,7 +1210,6 @@ img {
 .navigation-link {
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   margin: 15px;
   margin-bottom: 30px;
   background-color: #FFFFFF;
@@ -1584,6 +1589,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
+    margin-bottom: 50px;
   }
 }
 
